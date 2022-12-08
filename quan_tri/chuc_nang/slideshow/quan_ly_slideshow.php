@@ -14,7 +14,7 @@ $conn = mysqli_connect("localhost","root","","ban_hang");
 		<td align="center" width="140px" ><b>Xóa</b></td>
 	</tr>
 	<?php 
-		while($tv_2=mysql_fetch_array($tv_1))
+		while($tv_2=mysqli_fetch_array($tv_1))
 		{
 			$id=$tv_2['id'];
 			$link_hinh="../hinh_anh/slideshow/".$tv_2['hinh'];
@@ -36,6 +36,8 @@ $conn = mysqli_connect("localhost","root","","ban_hang");
 				</tr>
 			<?php 
 		}
+
+    mysqli_close($con);
 	?>
 
 </table>

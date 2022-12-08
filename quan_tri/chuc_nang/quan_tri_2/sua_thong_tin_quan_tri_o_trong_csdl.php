@@ -16,6 +16,8 @@ $conn = mysqli_connect("localhost","root","","ban_hang");
 		$mat_khau=md5($mat_khau);
 	}
 
+echo $mat_khau;
+
 	$tv="
 	UPDATE thong_tin_quan_tri SET 
 	ky_danh = '$ky_danh',
@@ -27,6 +29,6 @@ $conn = mysqli_connect("localhost","root","","ban_hang");
 	$_SESSION['ky_danh']=$ky_danh;
 	$_SESSION['mat_khau']=$mat_khau;
 	
-	thong_bao_html("Đã cập nhật lại thông tin quản trị");			
-	
+	thong_bao_html("Đã cập nhật lại thông tin quản trị");
+mysqli_close($conn);
 ?>
