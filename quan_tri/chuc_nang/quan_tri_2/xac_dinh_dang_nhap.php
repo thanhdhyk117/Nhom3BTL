@@ -44,7 +44,6 @@ include "../ket_noi.php";
 	{
 		$ky_danh=$_POST['ky_danh'];
 		$ky_danh=str_replace("'","",$ky_danh);
-		$ky_danh=str_replace('"',"",$ky_danh);
 		
 		$mat_khau= $_POST['mat_khau'];
 		$mat_khau=md5($mat_khau);
@@ -52,6 +51,7 @@ include "../ket_noi.php";
 		$tv="select count(*) from thong_tin_quan_tri where ky_danh='$ky_danh' and mat_khau='$mat_khau' ";
 		$tv_1=mysqli_query($conn,$tv);
 		$tv_2=mysqli_fetch_array($tv_1);
+		
 		if($tv_2[0]==1)
 		{
 			$_SESSION['ky_danh']=$ky_danh;
