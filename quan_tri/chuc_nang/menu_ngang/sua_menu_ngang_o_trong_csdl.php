@@ -2,7 +2,8 @@
 	if(!isset($bien_bao_mat)){exit();}
 ?>
 <?php 
-$conn = mysqli_connect("localhost","root","","ban_hang");
+// $conn = mysqli_connect("localhost","root","","ban_hang");
+include "../ket_noi.php";
 	$ten_menu=trim($_POST['ten']);
 	$ten_menu=str_replace("'","&#39;",$ten_menu);
 	$loai_menu=$_POST['loai_menu'];

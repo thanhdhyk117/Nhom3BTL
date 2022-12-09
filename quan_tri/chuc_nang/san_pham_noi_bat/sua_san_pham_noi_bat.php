@@ -1,5 +1,7 @@
 <?php 
-$conn = mysqli_connect("localhost","root","","ban_hang");
+// $conn = mysqli_connect("localhost","root","","ban_hang");
+include "../ket_noi.php";
+
 	if(!isset($bien_bao_mat)){exit();}
 	for($i=1;$i<=10;$i++)
 	{

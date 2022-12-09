@@ -2,7 +2,9 @@
 	if(!isset($bien_bao_mat)){exit();}
 ?>
 <?php 
-$conn = mysqli_connect("localhost","root","","ban_hang");
+// $conn = mysqli_connect("localhost","root","","ban_hang");
+include "../ket_noi.php";
+
 	$tv="select * from slideshow order by id ";
 	$tv_1=mysqli_query($conn,$tv);
 ?>

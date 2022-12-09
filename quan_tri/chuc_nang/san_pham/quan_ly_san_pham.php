@@ -2,7 +2,9 @@
 	if(!isset($bien_bao_mat)){exit();}
 ?>
 <?php 
-$conn = mysqli_connect("localhost","root","","ban_hang");
+// $conn = mysqli_connect("localhost","root","","ban_hang");
+include "../ket_noi.php";
+
 	if(!isset($_GET['id_menu']))
 	{
 		$id_menu="toan_bo_san_pham";

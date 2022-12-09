@@ -2,7 +2,8 @@
 	if(!isset($bien_bao_mat)){exit();}
 ?>
 <?php 
-$conn = mysqli_connect("localhost","root","","ban_hang");
+// $conn = mysqli_connect("localhost","root","","ban_hang");
+include "../ket_noi.php";
 	$so_dong_tren_mot_trang=20;
 	if(!isset($_GET['trang'])){$_GET['trang']=1;}
 	

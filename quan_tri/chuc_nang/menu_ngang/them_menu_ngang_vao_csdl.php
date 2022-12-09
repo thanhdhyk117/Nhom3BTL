@@ -2,6 +2,7 @@
 	if(!isset($bien_bao_mat)){exit();}
 ?>
 <?php 
+include "../ket_noi.php";
 	$ten_menu=trim($_POST['ten']);
 	$ten_menu=str_replace("'","&#39;",$ten_menu);
 	$loai_menu=$_POST['loai_menu'];

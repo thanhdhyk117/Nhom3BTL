@@ -3,7 +3,9 @@
 ?>
 
 <?php 
-	$conn = mysqli_connect("localhost","root","","ban_hang");
+	// $conn = mysqli_connect("localhost","root","","ban_hang");
+include "../ket_noi.php";
+
 	$tv="select id,ten,gia,hinh_anh from san_pham where noi_bat='co' order by id desc limit 0,10";
 
 	$tv_1=mysqli_query($conn,$tv);

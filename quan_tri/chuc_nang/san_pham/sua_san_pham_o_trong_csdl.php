@@ -3,7 +3,9 @@
 ?>
 <?php 
 
-$conn = mysqli_connect("localhost","root","","ban_hang");
+// $conn = mysqli_connect("localhost","root","","ban_hang");
+include "../ket_noi.php";
+
 	$ten=trim($_POST['ten']);
 	$ten=str_replace("'","&#39;",$ten);
 	$gia=trim($_POST['gia']);

@@ -24,7 +24,9 @@
 				?>
 				<select name="danh_muc" style="margin-top:3px;margin-bottom:3px;" >
 					<?php 
-						$conn = mysqli_connect("localhost","root","","ban_hang");
+						// $conn = mysqli_connect("localhost","root","","ban_hang");
+include "../ket_noi.php";
+
 						$tv="select * from menu_doc order by id ";
 						$tv_1=mysqli_query($conn,$tv);
 						$a="";

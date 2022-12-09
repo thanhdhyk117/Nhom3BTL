@@ -3,7 +3,9 @@
 ?>
 
 <?php 
-$conn = mysqli_connect("localhost","root","","ban_hang");
+// $conn = mysqli_connect("localhost","root","","ban_hang");
+include "../ket_noi.php";
+
 	$so_dong_tren_mot_trang=10;
 	if(!isset($_GET['trang'])){$_GET['trang']=1;}	
 

@@ -2,8 +2,9 @@
 	if(!isset($bien_bao_mat)){exit();}
 ?>
 <?php 
-$conn = mysqli_connect("localhost","root","","ban_hang");
-	$tv="select * from footer limit 0,1 ";
+//$conn = mysqli_connect("localhost","root","","ban_hang");
+include "../ket_noi.php";
+$tv="select * from footer limit 0,1 ";
 	$tv_1=mysqli_query($conn,$tv);
 	$tv_2=mysqli_fetch_array($tv_1);
 	$noi_dung=$tv_2['html'];

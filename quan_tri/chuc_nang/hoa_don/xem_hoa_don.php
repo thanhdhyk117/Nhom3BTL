@@ -3,7 +3,8 @@
 ?>
 <?php 
 
-$conn = mysqli_connect("localhost","root","","ban_hang");
+//$conn = mysqli_connect("localhost","root","","ban_hang");
+include "../ket_noi.php";
 	$id=$_GET['id'];
 	$tv="select * from hoa_don where id='$id' ";
 	$tv_1=mysqli_query($conn,$tv);
