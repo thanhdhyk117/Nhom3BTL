@@ -17,23 +17,10 @@
 		<meta charset="UTF-8">
 		<title>Quản trị</title>
 		<script src='phan_bo_tro/tinymce/js/tinymce/tinymce.min.js'></script>
-		<link rel="stylesheet" type="text/css" href="giao_dien/giao_dien.css">
 	</head>
 	<body>
 		<?php 
-			if(!isset($xac_dinh_dang_nhap))
-			{
-				include("chuc_nang/quan_tri_2/khung_dang_nhap.php");
-			}
-			else 
-			{
-				if($xac_dinh_dang_nhap=="co")
-				{
-					echo "<center>";
-						include("chuc_nang/quan_tri_2/trang_chu.php");
-					echo "</center>";
-				}
-			}
+			
 		?>
 	</body>
 </html>
