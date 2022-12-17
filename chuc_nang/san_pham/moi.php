@@ -1,9 +1,10 @@
 <br />
 <center>
-	<?php 
+	<?php
+    include "ket_noi.php";
 		$tv="select id,ten,hinh_anh from san_pham order by id desc limit 0,3";
-		$tv_1=mysql_query($tv);
-		while($tv_2=mysql_fetch_array($tv_1))
+		$tv_1=mysqli_query($conn, $tv);
+		while($tv_2=mysqli_fetch_array($tv_1))
 		{
 			$link_anh="hinh_anh/san_pham/".$tv_2['hinh_anh'];
 			$link_chi_tiet="?thamso=chi_tiet_san_pham&id=".$tv_2['id'];
@@ -15,5 +16,6 @@
 			echo "<br>";
 			echo "<br>";
 		}
+    mysqli_close($conn);
 	?>
 </center>

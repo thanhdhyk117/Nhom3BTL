@@ -1,16 +1,17 @@
 <?php 
+include "ket_noi.php";
 	$so_du_lieu=15;
 	$tv="select count(*) from san_pham";
-	$tv_1=mysql_query($tv);
-	$tv_2=mysql_fetch_array($tv_1);
+	$tv_1=mysqli_query($conn, $tv);
+	$tv_2=mysqli_fetch_array($tv_1);
 	$so_trang=ceil($tv_2[0]/$so_du_lieu);
 	
 	if(!isset($_GET['trang'])){$vtbd=0;}else{$vtbd=($_GET['trang']-1)*$so_du_lieu;}
 	
 	$tv="select id,ten,gia,hinh_anh,thuoc_menu from san_pham order by id desc limit $vtbd,$so_du_lieu";
-	$tv_1=mysql_query($tv);
+	$tv_1=mysqli_query($conn, $tv);
 	echo "<table>";
-	while($tv_2=mysql_fetch_array($tv_1))
+	while($tv_2=mysqli_fetch_array($tv_1))
 	{
 		echo "<tr>";
 			for($i=1;$i<=4;$i++)
@@ -42,7 +43,7 @@
 				echo "</td>";
 				if($i!=4)
 				{
-					$tv_2=mysql_fetch_array($tv_1);
+					$tv_2=mysqli_fetch_array($tv_1);
 				}
 			}
 		echo "</tr>";
@@ -61,4 +62,6 @@
 		echo "</td>";
 	echo "</tr>";
 	echo "</table>";
+
+mysqli_close($conn);
 ?>

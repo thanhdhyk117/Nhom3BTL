@@ -1,4 +1,5 @@
 <?php 
+include "ket_noi.php";
 	if(trim($_GET['tu_khoa'])!=""){ 
 		$m=explode(" ",$_GET['tu_khoa']);    
 		$chuoi_tim_sql="";
@@ -20,17 +21,17 @@
 
 		$so_du_lieu=15;
 		$tv="select count(*) from san_pham  where $chuoi_tim_sql_2";
-		$tv_1=mysql_query($tv);
-		$tv_2=mysql_fetch_array($tv_1);
+		$tv_1=mysqli_query($conn, $tv);
+		$tv_2=mysqli_fetch_array($tv_1);
 		$so_trang=ceil($tv_2[0]/$so_du_lieu);
 		
 		if(!isset($_GET['trang'])){$vtbd=0;}else{$vtbd=($_GET['trang']-1)*$so_du_lieu;}
 		
 		$tv="select id,ten,gia,hinh_anh,thuoc_menu from san_pham where $chuoi_tim_sql_2 order by id desc limit $vtbd,$so_du_lieu";
 
-		$tv_1=mysql_query($tv);
+		$tv_1=mysqli_query($conn, $tv);
 		echo "<table>";
-		while($tv_2=mysql_fetch_array($tv_1))
+		while($tv_2=mysqli_fetch_array($tv_1))
 		{
 			echo "<tr>";
 				for($i=1;$i<=3;$i++)
@@ -62,7 +63,7 @@
 					echo "</td>";
 					if($i!=3)
 					{
-						$tv_2=mysql_fetch_array($tv_1);
+						$tv_2=mysqli_fetch_array($tv_1);
 					}
 				}
 			echo "</tr>";
@@ -86,4 +87,6 @@
 	{
 	echo "Bạn chưa nhập từ khóa";
 	}
+
+mysqli_close($conn);
 ?>
