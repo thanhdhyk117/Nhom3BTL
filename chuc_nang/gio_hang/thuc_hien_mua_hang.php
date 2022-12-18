@@ -47,5 +47,5 @@ include "ket_noi.php";
 
 mysqli_close($conn);
 
-//LLLLTTTTt
+//LLLLT
 ?>
