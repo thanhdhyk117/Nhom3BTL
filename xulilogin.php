@@ -8,16 +8,16 @@ include "ket_noi.php";
 	else{	
 		
 		if(isset($_POST['btn_dangnhap'])){
-			$sql=mysqli_query($conn, 'select* from users where username="'.$_POST['user'].'"and password="'.$_POST['pass'].'"');
+			$sql=mysqli_query($conn, 'select * from users where username="'.$_POST['user'].'"and password="'.$_POST['pass'].'"');
 			$count=mysqli_num_rows($sql);
 			
 			if($count>0){
-				echo "Đăng nhập thành công.Xin Chào ".$_POST['user'];
+				echo '<script>alert ("Đăng nhập thành công.Xin Chào "'.$_POST['user'].')'.'</script>';
 				$_SESSION['username']=$_POST['user'];
 				header('Location: index.php');
 			}
 			else{
-				echo "Đăng Nhập thất bại.";
+				echo '<script>alert("Sai tên đăng nhập hoặc mật khẩu")</script>';
 			}
 		}
 	}

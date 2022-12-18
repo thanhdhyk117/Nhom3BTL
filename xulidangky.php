@@ -9,7 +9,7 @@ include "ket_noi.php";
 		
 		if($username=="" || $password=="" || $ten==""|| $email=="")
 			{
-				echo "Vui long nhập đúng thông tin";
+				echo '<script>alert("Vui lòng nhập đầy đủ thông tin")</script>';
 			}
 		else{
 				$sql="INSERT INTO users(username, password, tennsd, email) VALUES (
@@ -18,10 +18,10 @@ include "ket_noi.php";
 										'$ten',
 										'$email')";
 					if(mysqli_query($conn,$sql)){
-						echo "chúc mừng bạn đã đăng ký thành công";
+						echo '<script>alert("Đăng ký thành công")</script>';
 						header('Location: login_SignUp.php');
 					}else{
-						echo "Không đăng ky được";
+						echo '<script>alert("Đăng ký không thành công")</script>';
 					}
 			}	
 	}
