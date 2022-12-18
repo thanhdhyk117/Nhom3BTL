@@ -26,11 +26,12 @@
             	<div class="header_left">
                 	<ul>
                     	<li><span  style="color:red;"class="glyphicon glyphicon-earphone"></span> 0905.692.314 hoặc 0906.333.666</li>
-                        
                     </ul>
                 </div>
                 <div class="header_center">
-                	<div class="header_center_left"><?php include("chuc_nang/tim_kiem/vung_tim_kiem.php");?></div>
+                	<div class="header_center_left">
+						<?php include("chuc_nang/tim_kiem/vung_tim_kiem.php");?>
+					</div>
                     <div class="header_center_right"></div>
                 </div>
                 
@@ -58,9 +59,9 @@
             	<a href="index.php"><img src="hinh_anh/banner/Logo2.png"></a>
             </div>
 			<div class="menu">
-           				<?php
-							include("chuc_nang/menu_ngang/menu_ngang.php");
-						?> 
+				<?php
+					include("chuc_nang/menu_ngang/menu_ngang.php");
+				?> 
                         
 			</div>
             <div class="conten">
