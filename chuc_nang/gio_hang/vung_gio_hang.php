@@ -7,8 +7,10 @@
 			$so_luong=$so_luong+$_SESSION['sl_them_vao_gio'][$i];
 		}
 	}
+
+	//EheLT
 ?>
 
- 
+
 
 <a href="?thamso=gio_hang"><span class="glyphicon glyphicon-shopping-cart"></span>Giỏ Hàng</a>
