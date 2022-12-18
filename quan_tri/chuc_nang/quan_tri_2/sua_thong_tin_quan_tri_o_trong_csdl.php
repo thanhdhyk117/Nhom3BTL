@@ -30,3 +30,6 @@ include '../ket_noi.php';
 	thong_bao_html("Đã cập nhật lại thông tin quản trị");			
 	
 ?>
+
+<!-- THem mot dong tai day -->
+<!-- THem mot dong tai day -->

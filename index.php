@@ -94,9 +94,6 @@
             </div>
             <!-- end conten--->
 				<?php include('footer.php');?>	
-					
-                    
-				
 		</center>
 	</body>
 </html>
