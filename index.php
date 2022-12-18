@@ -55,7 +55,7 @@
                 </div>
         	</div>
             <div style=" text-align:center; margin-top:25px; margin-bottom:15px;">
-            	<a href="index.php"><img src="hinh_anh/banner/Logo2.png"></a>
+            	<a href="index.php"><img src="hinh_anh/banner/crop.png"></a>
             </div>
 			<div class="menu">
            				<?php
