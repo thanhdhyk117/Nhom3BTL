@@ -85,11 +85,11 @@
 
                                        <b><i style="color:#090;">Khuyến khích các bạn qua trực tiếp shop mặc thử và mua hàng.</i></b><br>
                                  Shop mở cửa từ 8h - 21h hàng ngày<br>
-                                Số nhà 6 Nguyễn Trãi, Ba Đình, Thanh Hóa, Việt Nam<Br>
+                                Số nhà 595 Nguyễn Trãi, Thanh Xuân, Hà Nội, Việt Nam<Br>
                             </div>
                 			<br>
                             <div style=" width:780">
-                            	<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1578.3054978637106!2d105.77839094526462!3d19.803351993096545!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3136f8072a7ccce9%3A0x94b0e86b16c40dd0!2sShop+Th%E1%BB%9Di+Trang+Men+Fashion!5e0!3m2!1svi!2s!4v1493136461629" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+							<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3725.177757196358!2d105.79338174277497!3d20.9855105018355!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135adfe4d67ff67%3A0x8eef1c4955790031!2zN09jdG9icmUgNTk1IE5ndXnhu4VuIFRyw6Np!5e0!3m2!1sen!2s!4v1671395567465!5m2!1sen!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                             </div>
                             
                 	</div>		

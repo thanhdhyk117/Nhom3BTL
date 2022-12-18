@@ -15,8 +15,8 @@
         </div>
         <div class="ft_top_3v">
         	
-               <B> VỀ Men's Fahion</B><br><br>
-                <a href="#">Giới thiệu MenFahion.com</a><br>
+               <B> VỀ 7Octobre</B><br><br>
+                <a href="#">Giới thiệu 7Octobre</a><br>
                 <a href="#">Tuyển Dụng</a><br>
                 <a href="#">Chính sách bảo mật</a><br>
                 <a href="#">Điều khoản sử dụn</a>g<br>
@@ -41,7 +41,7 @@
         
     </div>
     <div class="footer_bottom" style=" text-align:left; background:#777; height:30px; color:#fff; line-height:30px; font-weight:bold; float:left; width:100%;">
-    	Copyright 2017 © Thời trang NAMFASHION.com
+    	Copyright 2022 © Thời trang 7Octobre
 
     </div>
 </div>
