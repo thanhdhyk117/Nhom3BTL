@@ -12,12 +12,12 @@ include "ket_noi.php";
 			$count=mysqli_num_rows($sql);
 			
 			if($count>0){
-				echo "Đăng nhập thành công.Xin Chào ".$_POST['user'];
+				echo '<script>alert ("Đăng nhập thành công.Xin Chào "'.$_POST['user'].')'.'</script>';
 				$_SESSION['username']=$_POST['user'];
 				header('Location: index.php');
 			}
 			else{
-				echo "Đăng Nhập thất bại.";
+				echo '<script>alert("Sai tên đăng nhập hoặc mật khẩu")</script>';
 			}
 		}
 	}

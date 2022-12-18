@@ -1,8 +1,8 @@
 <?php
 $servername = "localhost";
 $database = "ban_hang";
-$username = "root";
-$password = "";
+$username = "nhom3tt25";
+$password = "Password@123";
 // Create connection
 $conn = mysqli_connect($servername, $username, $password, $database);
 // Check connection
