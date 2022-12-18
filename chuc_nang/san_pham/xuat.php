@@ -16,7 +16,7 @@ include "ket_noi.php";
 	echo "<table>";
 	while($tv_2=mysqli_fetch_array($tv_1))
 	{
-		echo "<tr>";
+		echo "<tr>";// hang
 			for($i=1;$i<=4;$i++)
 			{
 				echo "<td align='center' width='215px' valign='top' >";
