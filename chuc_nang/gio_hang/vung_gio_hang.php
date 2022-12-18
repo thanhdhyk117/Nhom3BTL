@@ -8,7 +8,7 @@
 		}
 	}
 
-	//EheLT
+	//EheLTs
 ?>
 
 
