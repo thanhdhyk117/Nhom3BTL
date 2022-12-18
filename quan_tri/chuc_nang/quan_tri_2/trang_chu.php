@@ -28,30 +28,3 @@
 <?php 
 	include("chuc_nang/quan_tri_2/dieu_huong.php");
 ?>
-<br><br>
-<table width="990px" >
-	<tr>
-		<td width="445px" align="right">
-			Cửa hàng :
-		</td>
-		<td width="445px" >
-			ten_cua_hang
-		</td>
-	</tr>
-	<tr>
-		<td align="right" >
-			Quản trị viên :
-		</td>
-		<td>
-			ten_quan_tri_vien
-		</td>
-	</tr>
-	<tr>
-		<td align="right" >
-			Điện thoại :
-		</td>
-		<td>
-			so_dien_thoai
-		</td>
-	</tr>
-</table>

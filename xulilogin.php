@@ -8,7 +8,7 @@ include "ket_noi.php";
 	else{	
 		
 		if(isset($_POST['btn_dangnhap'])){
-			$sql=mysqli_query($conn, 'select* from users where username="'.$_POST['user'].'"and password="'.$_POST['pass'].'"');
+			$sql=mysqli_query($conn, 'select * from users where username="'.$_POST['user'].'"and password="'.$_POST['pass'].'"');
 			$count=mysqli_num_rows($sql);
 			
 			if($count>0){
