@@ -46,7 +46,7 @@ include "ket_noi.php";
 			echo "</td>";
 		echo "</tr>";
 	echo "</table>";
-
+//Them dong
 
 mysqli_close($conn);
 ?>
