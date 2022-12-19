@@ -9,6 +9,7 @@ include "ket_noi.php";
 		$noi_dung=nl2br($_POST['noi_dung']);
 		if($ten_nguoi_mua!="" and $dien_thoai!="" and $dia_chi!="")
 		{
+			//hihi
 			$hang_duoc_mua="";
 			for($i=0;$i<count($_SESSION['id_them_vao_gio']);$i++)
 			{
